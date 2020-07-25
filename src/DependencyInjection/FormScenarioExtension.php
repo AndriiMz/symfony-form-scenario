@@ -23,6 +23,6 @@ class FormScenarioExtension extends Extension
      */
     public function getAlias()
     {
-        return 'qb_filter';
+        return 'symfony_form_scenario';
     }
 }
