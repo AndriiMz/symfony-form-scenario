@@ -1,0 +1,22 @@
+{
+    "type": "symfony-bundle",
+    "name": "andrii-mz/symfony-form-scenario",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "AndriiMz\\FormScenario\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.1",
+        "doctrine/orm": "^2.7",
+        "symfony/config": "^4.1|^5.0",
+        "symfony/form": "^4.1|^5.0",
+        "symfony/dependency-injection": "^4.1|^5.0",
+        "symfony/http-kernel": "^4.1|^5.0"
+    },
+    "description": "Form Scenario help to uni."
+}

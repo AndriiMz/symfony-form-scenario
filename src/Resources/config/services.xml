@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <defaults public="false" />
+        <defaults autowire="true" />
+        <defaults autoconfigure="true" />
+
+        <service id="AndriiMz\FormScenario\Mutation\MutationManager"
+                 class="AndriiMz\FormScenario\Mutation\MutationManager"/>
+
+        <service id="AndriiMz\FormScenario\FormScenario"
+                 class="AndriiMz\FormScenario\FormScenario"
+                 public="true">
+            <argument type="service" id="Doctrine\ORM\EntityManagerInterface" />
+            <argument type="service" id="Symfony\Component\DependencyInjection\ContainerInterface" />
+            <argument type="service" id="AndriiMz\FormScenario\Mutation\MutationManager" />
+        </service>
+    </services>
+</container>
